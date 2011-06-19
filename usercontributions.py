@@ -16,6 +16,7 @@
 import os
 import sys
 import re
+import logging
 try:
     import re2
     re2_compile_with_fallback = re2.compile
@@ -25,7 +26,6 @@ except ImportError:
 import time
 from array import array
 from datetime import datetime
-import logging
 
 ## PROJECT LIBS
 import sonet.mediawiki as mwlib
